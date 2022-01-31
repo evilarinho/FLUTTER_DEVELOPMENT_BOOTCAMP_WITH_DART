@@ -1,8 +1,59 @@
 import 'package:flutter/material.dart';
 
+/*
+void main() => runApp(const MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    var assetsImage = const AssetImage(
+        'assets/images/diamond.png'); //<- Creates an object that fetches an image.
+    var image = Image(
+        image: assetsImage,
+        fit: BoxFit.cover); //<- Creates a widget that displays an image.
+
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Climb your mountain!"),
+          backgroundColor: Colors
+              .amber[600], //<- background color to combine with the picture :-)
+        ),
+        body: Container(child: image), //<- place where the image appears
+      ),
+    );
+  }
+}
+*/
+
+/*
+void main() => runApp(const MyApp());
+
+// the root widget of our application
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text("Image from assets"),
+        ),
+        body: Builder(builder: (context) {
+          return Image.asset('assets/images/diamond.png');
+        }), //   <--- image here
+      ),
+    );
+  }
+}
+*/
+
 // adaptação de https://docs.flutter.dev/cookbook/images/network-image
 // atualização para o null safety
-// /*
+///*
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -21,13 +72,12 @@ class MyApp extends StatelessWidget {
           title: Text(title),
           backgroundColor: Colors.blueGrey[900],
         ),
-        body: Center(child: Image.network('https://picsum.photos/250?image=9')),
+        body: Image.asset('assets/images/diamond.png', width: 300, height: 100),
       ),
     );
   }
 }
-// */
-
+//*/
 
 // apresentou erro em tempo de execução devido a desatualização do curso para o null safety
 /*

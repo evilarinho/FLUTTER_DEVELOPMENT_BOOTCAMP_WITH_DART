@@ -81,7 +81,18 @@ adaptação de https://docs.flutter.dev/cookbook/images/network-image
 
 --------------------------------------
 27.
-CONCLUÍDO: 
+CONCLUÍDO: 30/01/2022
+
+Resolvido a falha na publicação da imagem local em 30/01/2022 (a noite) com o suporte dos colegas nos grupos Discord Flutterando(Saulo) e Academia do Flutter (Brasizza): 
+flutter: 
+  assets: 
+    - assets/
+    - assets/images/
+  #  - assets/sounds/
+  #  - assets/lottie/
+  uses-material-design: true
+
+
 
 --------------------------------------
 28.
